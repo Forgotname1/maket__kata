@@ -253,6 +253,7 @@ max-height: 100px;}
 
    .title{
       display: flex;
+      
       white-space: nowrap;
      
    }
