@@ -4,7 +4,7 @@ body{margin:0;padding: 0;box-sizing: border-box;}
 .header{
    width: 100%;
    height: 88px;
-   border:1px solid black;
+   
    display:flex;
    align-items:center;
    justify-content: space-between;
@@ -25,10 +25,6 @@ body{margin:0;padding: 0;box-sizing: border-box;}
 .btn-burger{
    background: url('img/burger.svg') no-repeat center;
    margin: 0 0 0 10px;
-}
-
-.divider-left{
-   display:none;
 }
 .btn-main-page{
    background: url('img/Group.svg') no-repeat center;
@@ -68,9 +64,12 @@ body{margin:0;padding: 0;box-sizing: border-box;}
 }
 .header__right .btn-search::before{
    position:absolute;
-   content:url(img/divider.png);
+   content: "";
+   width: 2px;
+   height: 32px;
+   background-color:#EAEAEA;;
    top:5px;
-   right:50px;
+   right: 50px;
   
 }
 .btn-repair{
@@ -91,14 +90,15 @@ body{margin:0;padding: 0;box-sizing: border-box;}
 .btn-title{display:none}
 .title::before{
    content: '';
-   position: absolute;
-   background-image:url('img/highlight.png');
+   position: relative;
+   right:16px;
+   background-color:#41F6D7;
+   border-radius: 0 40% 40% 0;
    width:4px;
    height:40px;
-   left:0;
+   
 }
 main{
-   border: 1px solid black;
    background-color: #F8f8f8;
 }
 .slide-menu{
@@ -114,9 +114,9 @@ main{
 .slide-menu::after{
    content: '';
    position: absolute;
+   right:0;
    height: 40px;
    width: 24px;
-   right:0;
    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 
 
@@ -195,38 +195,47 @@ max-height: 100px;}
 
 @media screen and (min-width:768px) {
    .btn-burger::before{
-      content:url('img/divider.png');     
+      content:'';     
       width: 2px;
       height: 32px;
-      margin-left: 45px;   
+      background-color:#EAEAEA;
+      position: absolute;
+      top:30px;
+      left: 60px;
+
 }
    .btn-call{display:flex;margin-right: 15px;}
    .btn-chat{display:flex;margin-right: 15px;}
    .btn-profile{display:flex;margin-right: 20px;}
-   .btn-repair{margin-right:50px}
-   article{overflow: hidden;
-      min-height: 150px;
-      min-width: 312px;}
-      .main-content{
-         margin-left: 10px;
-      }
+   .btn-repair{margin-right:10px}
+     article{
+   overflow: hidden;
+   min-height: 150px;
+   min-width: 312px;
+   }
+     .main-image{
+   align-self: center;
+   background:url('img/_MG_3223.png') no-repeat;
+   max-width: 360px;
+   max-height:259px;
+   margin-right:40px;
+   margin-top: 20px;
+   border-radius:5%;
+   
+   }
 
-      .main-image{
-         align-self: center;
-         background:url('img/_MG_3223.png') no-repeat;
-         min-width: 380px;
-         min-height:230px;
-         margin:0 0 0 30px;
-      }
-
-      .main-content{
-         display: flex;
-         justify-content: left;
-      }
-
-
+    .main-content{
+      display: flex;
+   }
+    .main-content__info{
+      max-width: 312px;
+      margin-top: 15px;
+        
+   }
 }
+
 @media screen and (min-width:1120px) {
+   body{display:flex;justify-content: center;}
    .header{display: none;}
    .slide-menu{flex-wrap: wrap;}
    .btn-additional-services{display: none;}
@@ -240,7 +249,7 @@ max-height: 100px;}
    .main-content{display:flex;}
    .btn-repair-brands{display: flex;}
    .btn-feedback{display: flex;}
-   main{min-height: 535px;}
+    main{min-height: 535px;}
    .main-content{justify-content:center;flex-wrap: nowrap;}
    .main-image{width:521px; height:373px; }
 
@@ -250,30 +259,29 @@ max-height: 100px;}
       align-items:center;
       justify-content:space-between;
    }
-
    .title{
       display: flex;
-      
-      white-space: nowrap;
-     
+      white-space: nowrap;   
    }
    .btn-title{display:flex;
       margin-right: 50px;
-  }
- .btn-repair{position: relative;
+    }
+   .btn-repair{
+      position: relative;
       right:180px}
-.label-btn-repair{position: relative;
-right: 134px;
-white-space: nowrap;
-font-family: 'TT Lakes';
-font-size: 16px;
-line-height: 24px;
-letter-spacing: -0.2px;
-color: #1B1C21;
+   .label-btn-repair{
+      position: relative;
+      right: 134px;
+      white-space: nowrap;
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #1B1C21;
 }
-.btn-search{
-   position: relative;
-   right:20px}
+   .btn-search{
+      position: relative;
+      right:20px}
    .label-btn-search{
       position: relative;
       right: 125px;
