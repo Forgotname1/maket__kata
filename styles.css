@@ -3,7 +3,7 @@ body{margin:0;padding: 0;box-sizing: border-box;}
 
 .header{
    width: 100%;
-   height: 88px;
+   height: 60px;
    
    display:flex;
    align-items:center;
@@ -14,6 +14,8 @@ body{margin:0;padding: 0;box-sizing: border-box;}
    display:flex;
    box-sizing:border-box;
    align-items:center;
+   margin-top:20px;
+   margin-left: 10px;
 }  
 .btn {
    width: 40px;
@@ -22,6 +24,7 @@ body{margin:0;padding: 0;box-sizing: border-box;}
    border-radius:50%;
    cursor: pointer; 
 }
+
 .btn-burger{
    background: url('img/burger.svg') no-repeat center;
    margin: 0 0 0 10px;
@@ -40,6 +43,7 @@ body{margin:0;padding: 0;box-sizing: border-box;}
    justify-content: flex-end;
    box-sizing:border-box;
    margin-right: 20px;
+   margin-top:20px;
 }
 
 .btn-call{
@@ -84,6 +88,7 @@ body{margin:0;padding: 0;box-sizing: border-box;}
    letter-spacing: -0.6px;
    color: #1B1C21;
    margin-left: 16px;
+   padding-top: 25px;
    display: flex;
    align-items:center;
 }
@@ -193,6 +198,7 @@ max-height: 100px;}
   align-self:center;
 }
 
+
 @media screen and (min-width:768px) {
    .btn-burger::before{
       content:'';     
@@ -200,8 +206,8 @@ max-height: 100px;}
       height: 32px;
       background-color:#EAEAEA;
       position: absolute;
-      top:30px;
-      left: 60px;
+      top:25px;
+      left: 70px;
 
 }
    .btn-call{display:flex;margin-right: 15px;}
