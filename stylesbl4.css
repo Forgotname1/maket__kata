@@ -2,28 +2,26 @@ body{
     display:flex;
     flex-direction: column;
     width: 320px;
-    height: 880px;
+    height: 1124px;
     margin:0;
     padding:0;
-    box-shadow: 0 -15px 25px 0 rgb(196, 193, 193);
-    
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+                -2px 0px 4px 0px rgba(69, 79, 126, 0.02);   
 }
-.mobile-menu__header{
+.main-header{
     width: 320px;
-    height: 80px;
-    
+    height: 80px;    
     margin: -8px 0 0 -7px;
     display: flex;
     justify-content: space-between;
     align-items:center;
 }
-.header-left__btn{
+.header-left{
     display:flex;
     align-items:center;
     margin-left:20px;
 }
 main{
-    
     width: 320px;
     height: 500px;
     margin-left: -7px;
@@ -31,26 +29,23 @@ main{
 .main-list {
     list-style: none;
     padding-left: 24px;
-    padding-top: 20px
+    padding-top: 0;  
 }
 .main-list li {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .main-list li a {
     text-decoration: none;
     font-family: 'TT Lakes';
-    font-size: 16px;
-    
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21; 
-    
-    
+    transition: 1s all;   
 }
 .main-list li a:hover{
     opacity: 0.5;
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
 .main-list li a:hover::before{
     content: '';
@@ -66,16 +61,16 @@ main{
     height: 124px;
     width: 196px;
     margin-left: 10px;
-    margin-top: 35px;
-    
+    margin-top: 320px;    
 }
-
 .contacts-btn {
     display:flex;
     justify-content: flex-start;
+    margin-left: 8px;
 }
 .contacts-btn > .btn:not(:nth-child(1)) {
-    margin-left: 10px;
+    margin-left: 25px;
+    
 }
 .contacts-item {
     font-family: 'TT Lakes';
@@ -84,39 +79,44 @@ main{
     letter-spacing: -0.6px;
     color: #1B1C21;
     white-space:nowrap;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 .contacts-item a{
     text-decoration:none;
     font-family: 'TT Lakes';
     font-size: 16px;
-    
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
     padding-left: 0;
+    transition: 1s all;
 }
 .tel a{
+    padding-top: 15px;
     font-weight:bold;
-    font-size: 20px;
+    font-size: 27px;
+    transition: 1s all;
 }
 .tel a:hover{
-    font-size: 30px;
+    font-size: 40px;
 }
 .contacts-item a:hover{
     font-size: 20px;
 }
 
 .btn-lang {
-    margin-top:40px;
+    margin-top:50px;
 }
 .btn-ru {
     border:none;
     background-color:rgba(255, 255, 255, 1);
     font-family: 'TT Lakes';
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
+    transition: 1s all;
 }
 .btn-ru:hover{
     opacity: 0.3;
@@ -128,6 +128,7 @@ main{
     border:none;
     border-radius:50%;
     cursor: pointer;   
+    transition: 1s all;
 }
 .btn:hover{
     transform: scale(1.2);
