@@ -54,14 +54,15 @@ body{
     top: 15px;
     height: 40px;
     width: 40px;
-    background:url("img/go.svg");
+    background:url("img/go.svg") no-repeat;
     border: none;
     cursor: pointer;
     transition: 1s all;
 
 }
 .btn:hover{
-    transform: scale(1.1);
+    height: 45px;
+    opacity: 0.5;
 }
 .btn::before {
     content: url('img/Bitmap.svg');
@@ -151,7 +152,7 @@ body::after{
        right:0;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 321px) {
 .main{
     display: none;
 }
