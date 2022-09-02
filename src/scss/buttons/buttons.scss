@@ -1,0 +1,106 @@
+.btn {
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+  border:none;
+  transition: 1s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+.main-logo{
+  width: 97px;
+  margin-left:15px;
+}
+.btn-burger{
+  background: url("../img/buttons/burger.svg");
+  margin-left:10px;
+}
+.btn-repair{
+  background: url("../img/buttons/repair.svg");
+  margin-right: 15px;
+}
+.btn-checkStatus{
+  background: url("../img/buttons/checkstatus.svg");
+  margin-right: 15px;
+}
+.btn-call{
+  background: url("../img/buttons/call.svg");
+  margin-right: 15px;
+}
+.btn-chat{
+  background: url("../img/buttons/chat.svg");
+  margin-right: 15px;
+}
+.btn-profile{
+  background: url("../img/buttons/profile.svg");
+  margin-right: 35px;
+}
+.btn-search{
+  background: url("../img/buttons/search.svg");
+  margin-right: 20px;
+}
+.menu__btn-call{
+  background: url("../img/buttons/call.svg");
+  margin-left: 10px;
+}
+.menu__btn-chat{
+  background: url("../img/buttons/chat.svg");
+  margin-left: 5px;
+}
+.menu__btn-profile{
+  background: url("../img/buttons/profile.svg");
+  margin-left: 5px;
+}
+.btn-close{
+  background: url("../img/buttons/close.svg");
+  margin-left:10px;
+}
+.btn-ru {
+  border:none;
+  background-color:rgba(255, 255, 255, 1);
+  font-family: 'TT Lakes', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  transition: 1s all;
+  &:hover{
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+}
+.feedback__btn-close{
+  background: url("../img/buttons/close.svg");
+}
+.call-btn__close{
+  background: url("../img/buttons/close.svg");
+}
+@media screen and("max-width: 768px"){
+  .btn-call, .btn-chat, .btn-profile{
+    display:none;
+  }
+  .feedback__btn-close{
+    display: block;
+   }
+  .call-btn__close{
+   display: block;
+ }
+
+}
+@media screen and("min-width: 768px"){
+  .main-logo{
+    margin-left:35px;
+  }
+}
+@media screen and("min-width: 1440px"){
+  .btn-close{
+    display: none;
+
+  }
+  .call-btn__close{
+    position: absolute;
+    left: -60px;
+    top: 25px;
+  }
+}

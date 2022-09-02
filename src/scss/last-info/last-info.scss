@@ -1,0 +1,46 @@
+.last-info{
+    &__prices{
+    font-family: 'TT Lakes',sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1B1C21;
+    height: 137px;
+    width: 288px;
+    margin-left: 15px;
+  }
+.last-info__offer{
+    font-family: 'TT Lakes',sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: 1s;
+  &:hover{
+    transform: scale(1.1);
+  }
+
+}
+  .text-offer{
+    margin: 0 0 0 15px;
+    &::after{
+      content: url("../img/buttons/line.svg");
+      position: relative;
+      top: 2px;
+      left: 3px;
+    }
+  }
+  @media screen and ('min-width: 768px'){
+    .last-info__prices{
+      height: 60px;
+      width: 421px;
+    }
+    .text-offer{
+      position: relative;
+      bottom: 24px;
+      left: 190px;
+    }
+  }
+}

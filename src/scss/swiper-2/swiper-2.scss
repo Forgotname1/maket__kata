@@ -1,0 +1,60 @@
+.swiper-2 {
+  box-sizing: border-box;
+  min-width: 320px;
+  max-height: 210px;
+  overflow: hidden;
+  &__readMore {
+    font-family: 'TT Lakes', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    height: 24px;
+    width: 100px;
+    border: none;
+    background: none;
+    white-space: nowrap;
+    margin-left: 20px;
+    transition: 1s;
+  }
+  &__readMore__label {
+    background: url("../img/buttons/icon.png") no-repeat;
+    width: 8px;
+    height: 12px;
+    position: relative;
+    left: 17px;
+    top: 7px;
+  }
+  &__forward{
+    border: none;
+    background: url("../img/buttons/go.svg");
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 105px;
+    left: 165px;
+  }
+  .swiper-slide {
+    box-sizing: border-box;
+    max-width: 224px;
+    height: 160px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    margin: 16px 0 16px 16px;
+    background-color: white;
+    z-index: 1;
+  }
+
+}
+.swiper-2__showMore{
+  max-height:100%;
+}
+
+.swiper-pagination-2{
+  transform: translate(70px,-10px);
+};
+@media screen and ('min-width: 768px'){
+  .swiper-pagination-2{
+    display: none;
+  }
+}

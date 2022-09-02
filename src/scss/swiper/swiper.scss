@@ -1,0 +1,121 @@
+.swiper-header{
+  font-family: 'TT Lakes',sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  height:48px;
+  color: #7E7E82;
+  padding: 15px 0 0 15px;
+}
+.swiper {
+  box-sizing: border-box;
+  min-height: 120px;
+  background: #F8F8F8;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 72px;
+    background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+    top: 16px;
+    right: 0;
+    z-index: 2;
+  }
+
+  &-slide {
+    box-sizing: border-box;
+    max-width: 224px;
+    height: 72px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    margin: 16px 0 16px 16px;
+    background-color: white;
+  }
+
+  &-button {
+    border: none;
+    background: url("../img/buttons/go.svg");
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 165px;
+    top: 15px;
+  }
+
+  &__showLess {
+    max-height: 200px;
+    overflow: hidden;
+  }
+
+  &__footer {
+    display: none;
+  }
+
+  &-readMore {
+    font-family: 'TT Lakes', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    height: 24px;
+    width: 100px;
+    border: none;
+    background: none;
+    white-space: nowrap;
+    margin-left: 20px;
+    transition: 1s;
+  }
+    &-readMore__label {
+      background: url("../img/buttons/icon.png") no-repeat;
+      width: 8px;
+      height: 12px;
+      position: relative;
+      left: 17px;
+      top: 7px;
+    }
+  }
+.swiper__ShowMore{
+  max-height: 365px;
+}
+  @media screen and ('min-width: 768px') {
+    .swiper {
+      min-width: 768px;
+      box-sizing: border-box;
+      min-height: 195px;
+      margin: 0;
+      padding: 0;
+
+      &-pagination {
+        display: none;
+      }
+
+      &::before {
+        display: none;
+      }
+
+      &-slide {
+        margin: 0;
+      }
+
+      &__footer {
+        display: flex;
+      }
+    }
+
+    .swiper-wrapper {
+      margin: 0;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 240px);
+      justify-content: space-evenly;
+      padding-left: 5px;
+      padding-top: 16px;
+      row-gap: 20px;
+    }
+  }
+
+
+

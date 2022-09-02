@@ -1,0 +1,71 @@
+.header1120{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  &__title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  &__btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+}
+.header1120__title{
+  font-family: TT Lakes, sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+  margin-left: 15px;
+  &::before{
+    content:'';
+    width:4px;
+    height:40px;
+    background: #41F6D7;
+    border-radius: 1px;
+    position: relative;
+    left:-15px;
+  }
+}
+.header1120-btn-repair{
+  background: url("../img/buttons/repair.svg");
+  margin-right: 150px;
+  &::before{
+    content: "Статус ремонта";
+    white-space: nowrap;
+    position: relative;
+    right: 130px;
+    font-family: TT Lakes,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+  }
+}
+.header1120-btn-search{
+  background: url("../img/buttons/search.svg");
+  margin-right: 20px;
+  &::before {
+    content: "Оставить заявку";
+    white-space: nowrap;
+    position: relative;
+    right: 130px;
+    font-family: TT Lakes,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+  }
+}
+@media screen and ('max-width:1120px'){
+  .header1120-btn-repair, .header1120-btn-search{
+    display:none;
+  }
+
+
+}
